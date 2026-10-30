@@ -62,11 +62,8 @@ pipeline {
                 linkRelative: false
 
             ])
-
-
-
         
-
+        
         }
 
     }

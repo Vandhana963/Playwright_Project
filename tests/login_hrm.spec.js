@@ -11,6 +11,4 @@ test("login_hrm",async({page})=>{
      await page.goto(url)
     await lgnhrm.loginpage(un,pwd)
 
-
-
 })
