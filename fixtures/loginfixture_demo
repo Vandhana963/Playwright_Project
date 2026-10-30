@@ -1,0 +1,38 @@
+import { test as base,expect } from "@playwright/test";
+import loginpage_demo from "../PageObjectModel/loginpage_demo.page";
+import homepage_demo from "../PageObjectModel/homepage_demo.page";
+import logindata_demo from "../testdata/logindata_demo.json";
+
+export const test = base.extend({
+
+    login: async ({ page }, use) => {
+
+        // Launch application
+        await page.goto(`${process.env.Base_url}`);
+
+        // Click login link
+        let home = new homepage_demo(page);
+        await home.loginlink.click();
+
+        // Login using existing POM
+        let loginpage = new loginpage_demo(page);
+
+        await loginpage.loginpage(
+            `${process.env.email}`,`${process.env.password}`
+        );
+
+        // Verify successful login
+        await home.logoutlink.waitFor({ state: "visible" });
+
+        // Provide the logged-in page to the test
+        await use(page);
+
+        // Teardown: Logout after test execution
+        if (await home.logoutlink.isVisible().catch(() => false)) {
+            await home.logoutlink.click();
+        }
+    }
+
+});
+
+export { test,expect }

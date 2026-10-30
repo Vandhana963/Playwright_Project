@@ -1,0 +1,25 @@
+{"valid":[{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "student","password":"Password123"} ],
+
+"invalid":[{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "studhsdjent","password":"nxsfxusbc"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "studeojwsdnt","password":"Passwoojsxhnrd123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "studewscydnnt","password":"Passnamxvhsword123"},
+{"url": "https://practicetestautomation.com/practice-test-login/",
+"username": "studembuswxint","password":"Password1nbsdhf23"}]
+
+
+
+}
