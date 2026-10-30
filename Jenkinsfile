@@ -4,7 +4,6 @@ pipeline {
     agent any
 
 
-
     stages {
 
         stage('Install Dependencies') {
@@ -74,4 +73,3 @@ pipeline {
 
 }
 
-Displaying git commands.txt.
