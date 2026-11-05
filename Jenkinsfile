@@ -26,7 +26,7 @@ pipeline {
 
                 script {
 
-                    def status = bat(script: 'npx playwright test tests/Project_demo', returnStatus: true)
+                    def status = bat(script: 'npx playwright test tests/Project_demo.spec.js', returnStatus: true)
 
                     if (status != 0) {
 
