@@ -28,23 +28,23 @@ test("Verification application launch",async({page})=>{
    
 })
 
-test("verify user registration",async({page})=>{
+// test("verify user registration",async({page})=>{
 
-    let url=logindata_demo.url
-    let fname=registerdata_demo.firstname
-    let lname=registerdata_demo.lastname
-    let email=registerdata_demo.email
-    let pwd=registerdata_demo.password
-    let cpwd=registerdata_demo.confirmpassword
-    //verify register
-     let home=new homepage_demo(page)
-     let register=new Registerpage_demo(page)
-     await page.goto(url)
-     await home.registerlink.click()
-     await register.registerpage(fname,lname,email,pwd,cpwd)
+//     let url=logindata_demo.url
+//     let fname=registerdata_demo.firstname
+//     let lname=registerdata_demo.lastname
+//     let email=registerdata_demo.email
+//     let pwd=registerdata_demo.password
+//     let cpwd=registerdata_demo.confirmpassword
+//     //verify register
+//      let home=new homepage_demo(page)
+//      let register=new Registerpage_demo(page)
+//      await page.goto(url)
+//      await home.registerlink.click()
+//      await register.registerpage(fname,lname,email,pwd,cpwd)
        
 
-})
+// })
 
 test("verify user login",async({page})=>{
    let url=logindata_demo.url

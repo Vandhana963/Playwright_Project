@@ -33,7 +33,7 @@ test("end2end", async ({ page}) => {
     await cart.checkout();
 
 });
-test.only("end2end2", async ({ page}) => {
+test("end2end2", async ({ page}) => {
      let home=new homepage_demo(page)
    let prodpage= new productspage_demo(page)
     let cart = new cartpage_demo(page);
