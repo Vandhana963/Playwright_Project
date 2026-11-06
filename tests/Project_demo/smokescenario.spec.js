@@ -7,17 +7,17 @@ import loginpage_demo from "../../PageObjectModel/loginpage_demo.page"
 
 test.describe("smoke tests",()=>{
 
-     test.beforeEach(async ({ page}) => {
-          let url=logindata_demo.url
-           await page.goto(url);
-    });
+    //  test.beforeEach(async ({ page}) => {
+    //       let url=logindata_demo.url
+    //        await page.goto(url);
+    // });
 
-    test.afterEach(async ({ page }) => {
-        console.log("Smoke test completed");
-    });
+    // test.afterEach(async ({ page }) => {
+    //     console.log("Smoke test completed");
+    // });
 
 
-test("Verification application launch",async({page})=>{
+test("Verification application launch",async({login,page})=>{
 
     
      let home=new homepage_demo(page)

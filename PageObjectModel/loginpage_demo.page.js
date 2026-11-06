@@ -10,7 +10,8 @@ class loginpage_demo
 
 
     async loginpage(un,pwd)
-    {
+
+{
         await this.emailtxtfld.fill(un)
         await this.passwordtxtfld.fill(pwd)
         await this.loginbtn.click()
